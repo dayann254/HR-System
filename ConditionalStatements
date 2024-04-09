@@ -1,0 +1,47 @@
+fun main(args: Array<String>) {
+        var age: Int
+        age = 20
+        if (age>20)
+        {println("Excellent,$age is above the target range")
+        }else{
+            println("Your $age is below the target range and you don't qualify")}
+        var number:Int
+        number=10
+        if(number==1){
+            println("Oops, you lost the guess")
+        }else if(number==2){
+            println("Oops you almost go it right")
+        }else if (number==3){
+            println("Wow, Congratulations, you did it!!!!!")
+        }else if(number==10){
+            println("Champeez!!><><")
+        } else {
+            println("$number is not valid. Please enter again")
+        }
+        //when statement
+        var y:Int
+        y=0
+        when(y){
+            1 -> println("Oops, you lost the game,try again")
+            2 -> println("Oops you almost got it right")
+            3 -> println("Congratulations,u've got it right")
+            else-> println("$  invalid ")
+        }
+
+        var height:Double
+        height=54.98
+        var weight:Int
+        weight=123
+        val BMI= weight / (height * height)
+
+        if (BMI<18){
+            println("You are underweight")
+        }else if(BMI<=25){
+            println("You are average ")
+        }else  if(BMI<=30){
+            println("You are overweight!")
+        } else{
+        println("You are Obese")
+    }
+
+}
