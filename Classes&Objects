@@ -1,0 +1,69 @@
+fun main(args: Array<String>) {
+    val Car1 = Car("Ford","Mustang",1960)
+    //Car1.model = "Ford"
+   // Car1.brand = "Mustang"
+    //Car1.year = "1960"
+    println(Car1.model)
+    println(Car1.brand)
+    println(Car1.year)
+    var Car2 = Car("Toyota","Allion",2001)
+   // Car2.model = "Toyota"
+    //Car2.brand = "Allion"
+   // Car2.year = "2001"
+    println(Car2.model)
+    println(Car2.brand)
+    println(Car2.year)
+    val bulb1 = Bulb()
+     bulb1.turnOn()
+    println(bulb1.displayLightStatus("bulb1"))
+    bulb1.TurnOff()
+    println(bulb1.displayLightStatus("bulb1"))
+    val bulb2 = Bulb()
+    bulb2.turnOn()
+    println(bulb2.displayLightStatus("bulb2"))
+    bulb2.TurnOff()
+    println(bulb2.displayLightStatus("bulb2"))
+   val person1 = Person("Felicity",20)
+    person1.canVote()
+    val person2 = Person("Briella",56)
+    person1.canVote()
+    val person3 = Person("Alvin",14)
+    person3.canVote()
+
+}
+class Car(var model :String,var brand:String,var year:Int){
+    //body
+    //data variable
+    //var model = ""
+    //v//ar brand = ""
+    //var year = ""
+    //functions(methods)
+}
+class Bulb{
+    var IsOn:Boolean=true
+    fun turnOn(){
+        IsOn=true
+    }
+    fun  TurnOff(){
+        IsOn=false
+    }
+    fun displayLightStatus(bulb:String){
+        if (IsOn==true){
+            println("The $bulb Is on.")
+        }
+        else{
+            println("The $bulb Is off.")}
+
+    }
+
+
+}
+class Person(var name:String,var age:Int){
+    fun canVote(){
+        if (age<18){
+            println("Can not  Vote")
+        }
+        else{
+            println("Can Vote")}
+    }
+}
